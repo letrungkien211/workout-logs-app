@@ -1,0 +1,61 @@
+export type Exercise = {
+  id: string
+  name: string
+  load: 'bodyweight' | 'weighted' | 'absolute'
+  unit: 'reps' | 'seconds'
+  category?: string
+}
+
+// Shared starter catalog. Add or edit entries here to update the exercise list
+// for every user on the next deployment. Keep IDs stable once used in logs.
+export const exerciseCatalog: Exercise[] = [
+  { id: 'catalog-barbell-back-squat', name: 'Barbell Back Squat', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-barbell-front-squat', name: 'Barbell Front Squat', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-goblet-squat', name: 'Goblet Squat', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-leg-press', name: 'Leg Press', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-romanian-deadlift', name: 'Romanian Deadlift', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-conventional-deadlift', name: 'Conventional Deadlift', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-trap-bar-deadlift', name: 'Trap Bar Deadlift', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-barbell-hip-thrust', name: 'Barbell Hip Thrust', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-dumbbell-lunge', name: 'Dumbbell Lunge', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-bulgarian-split-squat', name: 'Bulgarian Split Squat', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-leg-extension', name: 'Leg Extension', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-seated-leg-curl', name: 'Seated Leg Curl', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-standing-calf-raise', name: 'Standing Calf Raise', load: 'absolute', unit: 'reps', category: 'Legs' },
+  { id: 'catalog-barbell-bench-press', name: 'Barbell Bench Press', load: 'absolute', unit: 'reps', category: 'Chest' },
+  { id: 'catalog-dumbbell-bench-press', name: 'Dumbbell Bench Press', load: 'absolute', unit: 'reps', category: 'Chest' },
+  { id: 'catalog-incline-dumbbell-press', name: 'Incline Dumbbell Press', load: 'absolute', unit: 'reps', category: 'Chest' },
+  { id: 'catalog-push-up', name: 'Push-up', load: 'bodyweight', unit: 'reps', category: 'Chest' },
+  { id: 'catalog-cable-fly', name: 'Cable Fly', load: 'absolute', unit: 'reps', category: 'Chest' },
+  { id: 'catalog-overhead-press', name: 'Overhead Press', load: 'absolute', unit: 'reps', category: 'Shoulders' },
+  { id: 'catalog-dumbbell-lateral-raise', name: 'Dumbbell Lateral Raise', load: 'absolute', unit: 'reps', category: 'Shoulders' },
+  { id: 'catalog-face-pull', name: 'Face Pull', load: 'absolute', unit: 'reps', category: 'Shoulders' },
+  { id: 'catalog-pull-up', name: 'Pull-up', load: 'bodyweight', unit: 'reps', category: 'Back' },
+  { id: 'catalog-chin-up', name: 'Chin-up', load: 'bodyweight', unit: 'reps', category: 'Back' },
+  { id: 'catalog-lat-pulldown', name: 'Lat Pulldown', load: 'absolute', unit: 'reps', category: 'Back' },
+  { id: 'catalog-seated-cable-row', name: 'Seated Cable Row', load: 'absolute', unit: 'reps', category: 'Back' },
+  { id: 'catalog-one-arm-dumbbell-row', name: 'One-arm Dumbbell Row', load: 'absolute', unit: 'reps', category: 'Back' },
+  { id: 'catalog-inverted-row', name: 'Inverted Row', load: 'bodyweight', unit: 'reps', category: 'Back' },
+  { id: 'catalog-barbell-row', name: 'Barbell Row', load: 'absolute', unit: 'reps', category: 'Back' },
+  { id: 'catalog-dumbbell-bicep-curl', name: 'Dumbbell Bicep Curl', load: 'absolute', unit: 'reps', category: 'Arms' },
+  { id: 'catalog-barbell-curl', name: 'Barbell Curl', load: 'absolute', unit: 'reps', category: 'Arms' },
+  { id: 'catalog-hammer-curl', name: 'Hammer Curl', load: 'absolute', unit: 'reps', category: 'Arms' },
+  { id: 'catalog-triceps-pushdown', name: 'Triceps Pushdown', load: 'absolute', unit: 'reps', category: 'Arms' },
+  { id: 'catalog-overhead-triceps-extension', name: 'Overhead Triceps Extension', load: 'absolute', unit: 'reps', category: 'Arms' },
+  { id: 'catalog-parallel-bar-dip', name: 'Parallel Bar Dip', load: 'bodyweight', unit: 'reps', category: 'Arms' },
+  { id: 'catalog-plank', name: 'Plank', load: 'bodyweight', unit: 'seconds', category: 'Core' },
+  { id: 'catalog-side-plank', name: 'Side Plank', load: 'bodyweight', unit: 'seconds', category: 'Core' },
+  { id: 'catalog-dead-bug', name: 'Dead Bug', load: 'bodyweight', unit: 'reps', category: 'Core' },
+  { id: 'catalog-hanging-leg-raise', name: 'Hanging Leg Raise', load: 'bodyweight', unit: 'reps', category: 'Core' },
+  { id: 'catalog-cable-crunch', name: 'Cable Crunch', load: 'absolute', unit: 'reps', category: 'Core' },
+  { id: 'catalog-back-extension', name: 'Back Extension', load: 'bodyweight', unit: 'reps', category: 'Core' },
+  { id: 'catalog-barbell-shrug', name: 'Barbell Shrug', load: 'absolute', unit: 'reps', category: 'Back' },
+  { id: 'catalog-farmer-carry', name: 'Farmer Carry', load: 'absolute', unit: 'seconds', category: 'Conditioning' },
+  { id: 'catalog-kettlebell-swing', name: 'Kettlebell Swing', load: 'absolute', unit: 'reps', category: 'Conditioning' },
+  { id: 'catalog-burpee', name: 'Burpee', load: 'bodyweight', unit: 'reps', category: 'Conditioning' },
+  { id: 'catalog-box-jump', name: 'Box Jump', load: 'bodyweight', unit: 'reps', category: 'Conditioning' },
+  { id: 'catalog-jump-rope', name: 'Jump Rope', load: 'bodyweight', unit: 'seconds', category: 'Conditioning' },
+  { id: 'catalog-treadmill-run', name: 'Treadmill Run', load: 'bodyweight', unit: 'seconds', category: 'Conditioning' },
+  { id: 'catalog-cycling', name: 'Stationary Bike', load: 'bodyweight', unit: 'seconds', category: 'Conditioning' },
+  { id: 'catalog-rowing-machine', name: 'Rowing Machine', load: 'bodyweight', unit: 'seconds', category: 'Conditioning' },
+]
