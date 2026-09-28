@@ -22,3 +22,39 @@
 .exercise-detail{font-size:11px;color:#85877f}
 
 @media(max-width:700px){.workout-category{font-size:9px;letter-spacing:.7px}.exercise-name{font-size:12px}.exercise-detail{font-size:12px}.stepper span{font-size:11px}.recent-info strong{font-size:12px}.recent-info span{font-size:11px}}
+
+/* Use the platform font on phones and keep supporting text comfortably readable. */
+@media(max-width:700px){
+  .greeting-row h1,.page-intro h1{font-size:30px;letter-spacing:-.7px}
+  .date-line,.page-intro p,.rest-day-card p,.auth-panel p{font-size:14px}
+  .section-heading h2{font-size:19px;letter-spacing:-.2px}
+  .workout-category,.section-kicker,.eyebrow{font-size:11px;letter-spacing:.5px}
+  .workout-heading h3{font-size:16px;letter-spacing:0}
+  .exercise-name,.exercise-detail{font-size:14px}
+  .stepper span{font-size:13px}
+  .stepper{height:30px;gap:9px}
+  .stepper button{font-size:19px;padding:0 5px}
+  .recent-info strong,.log-main strong,.library-info strong,.schedule-workout-info>strong{font-size:14px}
+  .recent-info span,.log-main span,.library-info span,.schedule-workout-info>span{font-size:12px}
+  .recent-volume,.log-sets{font-size:11px}
+  .text-button,.button-primary,.google-button{font-size:14px}
+  .mobile-nav button{font-size:11px}
+  .mobile-nav button span{font-size:19px}
+  .day-header{font-size:12px}
+  .schedule-card strong{font-size:12px}
+  .schedule-card>span:nth-of-type(2),.add-to-day{font-size:11px}
+  .schedule-tip{font-size:13px}
+  .weekday-assignments button,.weekday-option span{font-size:11px}
+  .log-day-heading{font-size:12px}
+  .filter-label,.filter-label select{font-size:13px}
+  .pagination{font-size:12px}
+  .library-row{gap:10px}
+  .workout-form-item input,.workout-form-item select{font-size:13px}
+  .form-hint,.import-file-name,.import-errors,.import-preview{font-size:12px}
+}
+
+.exercise-line{display:grid;grid-template-columns:minmax(0,1fr) auto 22px;gap:8px}
+.exercise-line .check-control{width:22px;justify-self:end}
+.stepper{gap:4px;padding:0 4px}
+.stepper button{display:grid;width:24px;flex:0 0 24px;height:100%;place-items:center;padding:0}
+.stepper span{width:48px;min-width:48px;flex:0 0 48px;white-space:nowrap;font-variant-numeric:tabular-nums}
