@@ -205,7 +205,8 @@ function App() {
         const ids = settings?.exerciseIds
         setProgressFavorites(Array.isArray(ids) ? ids.filter((id): id is string => typeof id === 'string') : [])
         setProgressMetric(settings?.metric === 'reps' ? 'reps' : 'weight')
-        setProgressWeeks([4, 12, 26, 52].includes(settings?.weeks) ? settings.weeks : 12)
+        const weeks = settings?.weeks
+        setProgressWeeks(typeof weeks === 'number' && [4, 12, 26, 52].includes(weeks) ? weeks : 12)
       }, fail),
     ]
     return () => unsubs.forEach(unsub => unsub())
