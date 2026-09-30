@@ -155,6 +155,9 @@
 .progress-select{display:grid;gap:5px;min-width:min(240px,48%);font-size:8px;letter-spacing:.8px;color:#868a7d;font-weight:700}
 .progress-select select{height:38px;max-width:100%;padding:0 10px;border:1px solid #e4e7df;border-radius:7px;background:#fff;color:#34372f;font-size:13px;letter-spacing:0}
 .progress-charts{display:grid;gap:12px}
+.progress-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-bottom:12px}
+.progress-controls label{display:grid;gap:6px;min-width:0;color:#767b6e;font-size:11px}
+.progress-controls select{box-sizing:border-box;width:100%;min-width:0;min-height:44px;padding:8px;border:1px solid #e4e7df;border-radius:7px;background:#fff;color:#34372f;font:inherit;font-size:16px}
 .progress-chart-card{min-width:0;border:1px solid #e9eae4;border-radius:10px;background:#fff;padding:14px 14px 8px}
 .progress-chart-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .progress-chart-heading>div{display:flex;align-items:baseline;gap:8px;min-width:0}
