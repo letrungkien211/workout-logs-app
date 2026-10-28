@@ -213,3 +213,7 @@
   .exercise-search-label{grid-column:1/-1}
   .exercise-search-label input{font-size:16px}
 }
+
+.workout-form-group{display:grid;gap:6px;min-width:0}
+.add-same-exercise{justify-self:start;min-height:36px;padding:6px 8px;border:1px solid #dce4d5;border-radius:6px;background:#f1f5ed;color:#526a43;font:inherit;font-size:13px;cursor:pointer}
+.add-same-exercise:hover{background:#e5edde}
